@@ -1,0 +1,7 @@
+{
+  "doctype-first": true,
+  "doctype-html5": true,
+  "html-req-lang": true,
+  "indent-style": "spaces",
+  "indent-width": 2
+}
