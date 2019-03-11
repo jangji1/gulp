@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync");
-const htmlLint = require("gulp-htmllint");
+const htmlvalidator = require('gulp-w3c-html-validator');
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
@@ -23,8 +23,7 @@ const webserver = () => {
 const html = () => {
   return gulp
     .src("source/**/*.html", { since: gulp.lastRun(html) })
-    .pipe(htmlLint())
-    .pipe(gulp.dest("dist"));
+    .pipe(htmlvalidator())
 };
 
 const css = () => {
@@ -32,7 +31,7 @@ const css = () => {
     .src("source/css/**/*.css", { since: gulp.lastRun(css) })
     .pipe(
       postcss([
-        autoprefixer({ browsers: ["last 2 version", "ie >= 9"] }),
+        autoprefixer(),
         cssnano
       ])
     )
