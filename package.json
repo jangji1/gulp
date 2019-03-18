@@ -1,5 +1,5 @@
 {
-  "name": "gulp-study",
+  "name": "gulp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mulder21c/gulp-study.git"
+    "url": "git+https://github.com/jangji1/gulp.git"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/jangji1/gulp/issues"
   },
-  "homepage": "https://github.com/mulder21c/gulp-study#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
